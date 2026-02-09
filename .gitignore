@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+uploads/
+scores.json
+fuzzy_scores.json
+ann_scores.json
+*.zip
+*.log

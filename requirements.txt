@@ -1,0 +1,14 @@
+flask
+gunicorn
+pandas
+numpy
+scikit-learn
+scikit-fuzzy
+networkx
+joblib
+fuzzywuzzy
+python-Levenshtein
+python-docx
+docx2txt
+PyPDF2
+textract
