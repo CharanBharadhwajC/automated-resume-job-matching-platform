@@ -1,9 +1,45 @@
+# -----------------------------
+# Python cache / build files
+# -----------------------------
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# -----------------------------
+# Virtual environments
+# -----------------------------
+venv/
 .env
-uploads/
+
+# -----------------------------
+# Runtime JSON data (generated)
+# -----------------------------
 scores.json
 fuzzy_scores.json
 ann_scores.json
-*.zip
+
+# -----------------------------
+# Logs & temp
+# -----------------------------
 *.log
+*.zip
+
+# -----------------------------
+# Uploads folder handling
+# -----------------------------
+# Ignore everything inside uploads by default
+uploads/*
+
+# BUT allow python modules required by app
+!uploads/__init__.py
+!uploads/*.py
+
+# -----------------------------
+# OS junk files
+# -----------------------------
+.DS_Store
+Thumbs.db

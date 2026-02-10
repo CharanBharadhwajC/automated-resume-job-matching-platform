@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{% block title %}Platform{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- GLOBAL NAVBAR -->
+<div class="button-group" style="margin-bottom:20px;">
+<a href="/" class="btn">🏠 Home</a>
+
+{% if session.get('hr_logged_in') or session.get('admin_logged_in') %}
+<a href="/logout" class="btn">🚪 Logout</a>
+{% endif %}
+</div>
+
+{% block content %}{% endblock %}
+
+</div>
+
+</body>
+</html>

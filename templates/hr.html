@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>HR Dashboard</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
-</head>
+{% extends "base.html" %}
+{% block title %}HR Dashboard{% endblock %}
 
-<body>
-<div class="container">
+{% block content %}
+
 <h1 class="title">HR Dashboard</h1>
 
-<!-- ⭐ JOB DESCRIPTION SECTION -->
 <div class="card">
 <h2>Job Description</h2>
-
 <form action="/update-jd" method="POST">
 <textarea name="job_description" rows="10" style="width:100%;">{{ jd_content }}</textarea>
 <br><br>
@@ -55,8 +47,7 @@ class="score-input"/>
 {% else %}
 <p>No resumes uploaded yet.</p>
 {% endif %}
-</div>
 
 <script src="{{ url_for('static', filename='script.js') }}"></script>
-</body>
-</html>
+
+{% endblock %}
