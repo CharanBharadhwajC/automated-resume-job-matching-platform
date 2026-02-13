@@ -1,23 +1,23 @@
-https://huggingface.co/spaces/CharanBharadhwaj/automated-resume-job-matching
-# 🚀 Automated Resume – Job Matching Platform
+Web Page: https://huggingface.co/spaces/CharanBharadhwaj/automated-resume-job-matching
+# Automated Resume – Job Matching Platform
 
 An AI-powered Resume Screening System that helps HR teams evaluate candidates using **Fuzzy Logic**, **Artificial Neural Networks (ANN)**, and manual HR scoring.
 
 This project provides a complete end-to-end workflow:
 
-✅ Resume upload
-✅ Feature extraction & NLP processing
-✅ Fuzzy-based JD similarity scoring
-✅ ANN-based predictive scoring
-✅ HR dashboard with manual evaluation
-✅ Admin dashboard with exports
-✅ Docker-ready deployment (Hugging Face compatible)
+Resume upload
+Feature extraction & NLP processing
+Fuzzy-based JD similarity scoring
+ANN-based predictive scoring
+HR dashboard with manual evaluation
+Admin dashboard with exports
+Docker-ready deployment (Hugging Face compatible)
 
 ---
 
-## 🧠 Key Features
+## Key Features
 
-### 👤 User Module
+### User Module
 
 * Upload resumes (PDF / DOCX / TXT)
 * Automatic resume parsing
@@ -26,7 +26,7 @@ This project provides a complete end-to-end workflow:
   * Fuzzy Logic
   * ANN Model
 
-### 🧑‍💼 HR Dashboard
+### HR Dashboard
 
 * Secure HR login
 * View uploaded resumes
@@ -34,7 +34,7 @@ This project provides a complete end-to-end workflow:
 * Edit Job Description (JD)
 * JD updates trigger ANN retraining automatically
 
-### 🛠 Admin Panel
+### Admin Panel
 
 * Secure admin login
 * Export evaluation results (CSV)
@@ -42,7 +42,7 @@ This project provides a complete end-to-end workflow:
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 **Backend**
 
@@ -65,7 +65,7 @@ This project provides a complete end-to-end workflow:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── app.py
@@ -83,7 +83,7 @@ This project provides a complete end-to-end workflow:
 
 ---
 
-## 🧪 Local Setup (Virtual Environment)
+## Local Setup (Virtual Environment)
 
 ```bash
 cd "SOFT COMPUTING"
@@ -95,7 +95,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🧠 Train ANN Model
+## Train ANN Model
 
 ANN requires HR-labelled data.
 
@@ -113,7 +113,7 @@ models/ann_model.pkl
 
 ---
 
-## ▶️ Run Locally
+## Run Locally
 
 ```bash
 python app.py
@@ -127,7 +127,7 @@ http://localhost:7860
 
 ---
 
-## 🐳 Run with Docker
+## Run with Docker
 
 Build image:
 
@@ -143,7 +143,7 @@ docker run -p 7860:7860 resume-parser
 
 ---
 
-## ☁️ Deployment (Hugging Face Space)
+## Deployment (Hugging Face Space)
 
 This project is configured for **Docker Spaces**.
 
@@ -156,7 +156,7 @@ Steps:
 
 ---
 
-## 🔐 Authentication
+## Authentication
 
 | Role  | Passcode |
 | ----- | -------- |
@@ -167,7 +167,7 @@ Steps:
 
 ---
 
-## 📊 Scoring Pipeline
+## Scoring Pipeline
 
 ```
 Resume Upload
@@ -191,14 +191,14 @@ ANN Retraining (on JD update)
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Charan Bharadhwaj**
 Automated Resume – Job Matching Platform
 
 ---
 
-## ⭐ Future Improvements
+## Future Improvements
 
 * Async ANN training
 * Role-based authentication system
