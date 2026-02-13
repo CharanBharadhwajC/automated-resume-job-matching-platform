@@ -86,7 +86,7 @@ Docker-ready deployment (Hugging Face compatible)
 ## Local Setup (Virtual Environment)
 
 ```bash
-cd "SOFT COMPUTING"
+cd "automated-resume-job-matching-platform"
 python -m venv venv
 venv\Scripts\activate
 pip install "pip<24.1"
